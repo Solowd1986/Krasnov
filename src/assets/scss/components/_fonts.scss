@@ -1,0 +1,55 @@
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy");
+  src: url("#{$font_dir}/gilroy-regular.eot?#iefix") format("embedded-opentype"),
+  url("#{$font_dir}/gilroy-regular.woff") format("woff"),
+  url("#{$font_dir}/gilroy-regular.woff") format("woff2"),
+  url("#{$font_dir}/gilroy-regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy");
+  src: url("#{$font_dir}/gilroy-bold.eot?#iefix") format("embedded-opentype"),
+  url("#{$font_dir}/gilroy-bold.woff") format("woff"),
+  url("#{$font_dir}/gilroy-bold.woff") format("woff2"),
+  url("#{$font_dir}/gilroy-bold.ttf") format("truetype");
+
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy");
+  src: url("#{$font_dir}/gilroy-light.eot");
+  src: url("#{$font_dir}/gilroy-light.eot?#iefix") format("embedded-opentype"),
+  url("#{$font_dir}/gilroy-light.woff") format("woff"),
+  url("#{$font_dir}/gilroy-light.woff2") format("woff2"),
+  url("#{$font_dir}/gilroy-light.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+

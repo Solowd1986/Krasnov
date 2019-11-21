@@ -1,0 +1,28 @@
+
+/*  Компоненты  */
+@import "components/normalize";
+@import "components/variables";
+@import "components/mixins";
+@import "components/forms";
+@import "components/modals";
+@import "components/buttons";
+
+@import "components/custom-reset";
+@import "components/fonts";
+@import "components/helpers";
+
+
+/*  Общие стили  */
+@import "blocks/common/index";
+@import "blocks/common/header";
+@import "blocks/common/aside";
+@import "blocks/common/main";
+@import "blocks/common/product-item";
+@import "blocks/common/footer";
+
+
+/* Страница отдельного товара   */
+@import "blocks/inner-pages/single-product-page/single-product";
+
+
+

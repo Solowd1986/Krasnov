@@ -1,0 +1,29 @@
+
+
+/*  Миксин для расчета соотношения сторон элемента */
+@mixin calc-ratio($width: 16, $height: 9) {
+  padding-top: #{(100 / $width * $height)}+"%";
+}
+
+
+
+/*  Миксин для выравнивания элементов по осям */
+@mixin centered($axis: both) {
+  @if $axis == both {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $axis == x {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $axis == y {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+
+

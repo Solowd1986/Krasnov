@@ -24,6 +24,12 @@
   }
 }
 
+/*  Миксин проверки на IE11  */
+@mixin ie11-mediaquery($max-width) {
+  @media (-ms-high-contrast:none) and (max-width: #{$max-width}px) {
+    @content;
+  }
+}
 
 
 

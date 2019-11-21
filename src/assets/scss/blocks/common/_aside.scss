@@ -42,8 +42,7 @@
     .aside-nav__desc {
       transform: scale(1);
       padding: 0 25px;
-      width: 150px;
-
+      font-size: 22px;
     }
   }
 }
@@ -54,12 +53,10 @@
 }
 
 .aside-nav__desc {
-  width: 0;
   overflow: hidden;
   transform: scale(0);
-
   transition: .4s ease;
-  font-size: 22px;
+  font-size: 0;
   font-weight: 900;
   text-transform: uppercase;
 }

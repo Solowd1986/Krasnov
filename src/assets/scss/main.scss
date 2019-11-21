@@ -1,4 +1,7 @@
 
+
+
+
 /*  Компоненты  */
 @import "components/normalize";
 @import "components/variables";
@@ -10,6 +13,16 @@
 @import "components/custom-reset";
 @import "components/fonts";
 @import "components/helpers";
+
+
+.class {
+  @include ie11-mediaquery(1200) {
+    margin: 0 auto;
+  }
+}
+
+
+
 
 
 /*  Общие стили  */

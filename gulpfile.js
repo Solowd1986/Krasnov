@@ -6,7 +6,6 @@ let browserSync = require('browser-sync').create();
 let nunjucks = require('gulp-nunjucks');
 let rename = require("gulp-rename");
 let requireDir = require("require-dir");
-let renderNjk = require("gulp-nunjucks-render");
 
 const path = {
     build: {
@@ -33,7 +32,6 @@ const path = {
         css: 'src/assets/scss/**/*.css',
         html: './*.html'
     },
-
     clean: 'dist'
 };
 
@@ -42,10 +40,10 @@ const path = {
 gulp.task('build', function() {
     return gulp.src([path.src.tpl, path.src.tpl_hide])
         .pipe(nunjucks.compile())
+
         .pipe(rename({
             extname: ".html"
         }))
-
         .pipe(gulp.dest(path.build.base))
 });
 
@@ -61,4 +59,17 @@ gulp.task('default', ['build'], function() {
 });
 
 
+
+
+//
+// gulp.task('build', function() {
+//     return gulp.src([path.src.tpl, path.src.tpl_hide])
+//         .pipe(nunjucks.compile())
+//
+//         .pipe(rename({
+//             extname: ".html"
+//         }))
+//         .pipe(gulp.dest(path.build.base))
+//         .pipe(gulp.dest('./'))
+// });
 

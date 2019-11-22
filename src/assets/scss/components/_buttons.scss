@@ -1,9 +1,6 @@
 
 .btn {
   padding: 15px 20px;
-  &:hover {
-
-  }
 
   &:active, &:focus {
     outline: none;
@@ -16,5 +13,6 @@
   &--lowercase {
     text-transform: lowercase;
   }
-
 }
+
+

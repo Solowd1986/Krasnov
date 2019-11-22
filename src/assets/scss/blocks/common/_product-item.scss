@@ -4,7 +4,6 @@
 .content-inner {
   width: 85%;
   margin: 0 auto;
-
 }
 
 .product-list {
@@ -14,7 +13,6 @@
   @media (max-width: 1548px) {
     justify-content: center;
   }
-
 }
 
 
@@ -107,7 +105,9 @@
   background-size: contain;
 }
 
+
 .product-item__btn {
+
   min-width: 160px;
   max-width: 300px;
   padding: 12px 9px;
@@ -118,8 +118,22 @@
   border-radius: 6px;
   background-color: $red-100;
 
-  &:hover {
-    opacity: .9;
-  }
+  @include btn-hover-effect($border-radius: 6px);
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
 

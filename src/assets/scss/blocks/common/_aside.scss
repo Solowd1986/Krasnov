@@ -40,7 +40,6 @@
     background-color: $dark-200;
 
     .aside-nav__desc {
-      transform: scale(1);
       padding: 0 25px;
       font-size: 22px;
     }
@@ -49,17 +48,54 @@
 
 
 .aside-nav__img {
-  display: block;
+  width: 80px;
+  height: 80px;
+  background: url("/src/assets/img/aside-sprite.png") no-repeat;
+
+  &--discount {
+    background-position: -95px -5px;
+  }
+
+  &--pizza {
+    background-position: -90px -95px;
+  }
+
+  &--burger {
+    background-position: -5px -5px;
+  }
+
+  &--pie {
+    background-position: -5px -95px;
+  }
+
+  &--sweets {
+    background-position: -95px -185px;
+  }
+
+  &--drink {
+    background-position: -185px -5px;
+  }
+
 }
 
+
 .aside-nav__desc {
-  overflow: hidden;
-  transform: scale(0);
   transition: .4s ease;
   font-size: 0;
   font-weight: 900;
   text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

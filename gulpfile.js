@@ -54,22 +54,9 @@ gulp.task('default', ['build'], function() {
         server: "./"
     });
 
-    gulp.watch([path.watch.tpl, path.watch.scss], ['build']);
+    gulp.watch([path.watch.tpl], ['build']);
     gulp.watch([path.watch.html, path.watch.css]).on('change', browserSync.reload);
 });
 
 
-
-
-//
-// gulp.task('build', function() {
-//     return gulp.src([path.src.tpl, path.src.tpl_hide])
-//         .pipe(nunjucks.compile())
-//
-//         .pipe(rename({
-//             extname: ".html"
-//         }))
-//         .pipe(gulp.dest(path.build.base))
-//         .pipe(gulp.dest('./'))
-// });
 

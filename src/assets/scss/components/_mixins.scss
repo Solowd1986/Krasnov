@@ -45,7 +45,7 @@
     border-radius: $border-radius;
   }
 
-  &:hover::after {
+  &:hover::after, &:focus::after {
     width: 100%;
   }
 }
@@ -63,6 +63,14 @@
     left: 0;
     z-index: $z-index-overlay;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@mixin scale-when-hover() {
+
+  transition: transform .5s ease;
+  &:hover {
+    transform: scale(1.12);
   }
 }
 

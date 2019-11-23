@@ -17,9 +17,11 @@
 @import "blocks/common/header";
 @import "blocks/common/aside";
 @import "blocks/common/main";
-@import "blocks/common/product-item";
+@import "blocks/common/slider";
 @import "blocks/common/footer";
 
+/*  Список товаров  */
+@import "blocks/common/product-item";
 
 /* Страница отдельного товара   */
 @import "blocks/inner-pages/single-product-page/single-product";

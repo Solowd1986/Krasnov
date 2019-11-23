@@ -555,16 +555,27 @@ body {
   .aside-nav__link:hover {
     background-color: #131513; }
     .aside-nav__link:hover .aside-nav__desc {
-      transform: scale(1);
       padding: 0 25px;
       font-size: 22px; }
 
 .aside-nav__img {
-  display: block; }
+  width: 80px;
+  height: 80px;
+  background: url("/src/assets/img/aside-sprite.png") no-repeat; }
+  .aside-nav__img--discount {
+    background-position: -95px -5px; }
+  .aside-nav__img--pizza {
+    background-position: -90px -95px; }
+  .aside-nav__img--burger {
+    background-position: -5px -5px; }
+  .aside-nav__img--pie {
+    background-position: -5px -95px; }
+  .aside-nav__img--sweets {
+    background-position: -95px -185px; }
+  .aside-nav__img--drink {
+    background-position: -185px -5px; }
 
 .aside-nav__desc {
-  overflow: hidden;
-  transform: scale(0);
   transition: .4s ease;
   font-size: 0;
   font-weight: 900;
@@ -588,6 +599,33 @@ body {
   width: calc(100% - 149px);
   margin-left: auto; }
 
+.slider__img {
+  width: 100%; }
+
+/*  Смещаем на 125px от блока main, чтобы компенсировать его top: 125px от верхнего меню  */
+.footer {
+  height: 80px;
+  margin-top: 125px;
+  margin-left: 150px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #1C1E1B; }
+
+.ssd {
+  background-color: lightgrey;
+  transition: .4s;
+  padding: 15px; }
+
+.ssd::placeholder {
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px; }
+
+.ssd:active, .ssd:focus {
+  background-color: white;
+  padding-left: 25px; }
+
+/*  Список товаров  */
 .content-inner {
   width: 85%;
   margin: 0 auto; }
@@ -630,7 +668,7 @@ body {
 .product-item__img {
   vertical-align: bottom;
   border-radius: 6px 6px 0 0;
-  transition: .5s ease; }
+  transition: transform .5s ease; }
   .product-item__img:hover {
     transform: scale(1.12); }
 
@@ -669,8 +707,8 @@ body {
   font-size: 14px;
   font-weight: 900;
   color: #ffffff;
-  background: url("/src/assets/img/weight.png") no-repeat;
-  background-size: contain; }
+  background: url("/src/assets/img/aside-sprite.png") no-repeat;
+  background-position: -275px -5px; }
 
 .product-item__btn {
   min-width: 160px;
@@ -695,21 +733,13 @@ body {
     transition: 0.25s;
     background-color: #b8001f;
     border-radius: 6px; }
-  .product-item__btn:hover::after {
+  .product-item__btn:hover::after, .product-item__btn:focus::after {
     width: 100%; }
 
 .main {
   display: flex;
   flex-direction: column;
   flex-grow: 1; }
-
-.footer {
-  height: 80px;
-  margin-top: auto;
-  margin-left: 80px;
-  color: #ffffff;
-  text-align: center;
-  background-color: #1C1E1B; }
 
 /* Страница отдельного товара   */
 

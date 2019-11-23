@@ -1,10 +1,32 @@
 
-
+/*  Смещаем на 125px от блока main, чтобы компенсировать его top: 125px от верхнего меню  */
 .footer {
   height: 80px;
-  margin-top: auto;
-  margin-left: 80px;
+  margin-top: 125px;
+  margin-left: 150px;
   color: $white;
   text-align: center;
   background-color: $dark-100;
+}
+
+.ssd {
+  background-color: lightgrey;
+  transition: .4s;
+  padding: 15px;
+  //width: 150px;
+}
+
+.ssd::placeholder {
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+}
+
+//.ssd:focus .ssd::placeholder {
+//  padding-left: 25px;
+//}
+
+.ssd:active, .ssd:focus {
+  background-color: white;
+  padding-left: 25px;
 }

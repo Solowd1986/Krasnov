@@ -1,4 +1,48 @@
 
+/*  Фикс IE11 для прижатия футера к подвалу  */
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+.main {
+  position: relative;
+  top: 124px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  padding: 80px 0;
+  text-align: center;
+  background-color: $dark-200;
+  color: $white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 149px);
+  margin-left: auto;
+}
+
+.content-inner {
+
+
+}
+
+
 
 
 .content-inner {
@@ -53,8 +97,11 @@
 .product-item__img {
   vertical-align: bottom;
   border-radius: 6px 6px 0 0;
+  transition: transform .5s ease;
 
-  @include scale-when-hover;
+  &:hover {
+    transform: scale(1.12);
+  }
 }
 
 .product-item__title {
@@ -114,18 +161,15 @@
   font-size: 16px;
   font-weight: 900;
   color: $white;
-  text-transform: uppercase;
   border-radius: 6px;
   background-color: $red-100;
 
-  @include btn-hover-effect($border-radius: 6px);
+  &:hover {
+    opacity: .7;
+  }
+
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
 
 
 

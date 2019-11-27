@@ -3,7 +3,7 @@
 .header {
   position: fixed;
   width: 100%;
-  max-width: $container-max-width;
+  max-width: $container-width;
   z-index: $header-z-index;
   background-color: $dark-100;
 }
@@ -19,12 +19,24 @@
 }
 
 .main-nav__logo-link {
-  min-width: 260px;
-  max-width: 350px;
-  margin: 0 0 25px 30px;
-  text-align: center;
-
+  max-width: 360px;
+  min-width: 300px;
+  align-self: stretch;
+  padding: 12px 20px;
 }
+
+
+.logo {
+  max-width: 360px;
+  min-width: 300px;
+
+  background-image: url("/src/assets/img/logo4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
 
 .main-nav__logo-img {
   vertical-align: bottom;
@@ -86,6 +98,8 @@
 
 }
 
+
+
 .user-nav__link {
   display: flex;
   position: relative;
@@ -98,6 +112,30 @@
 .user-nav__link--text-lg {
   font-size: 32px;
   font-weight: bold;
+}
+
+.user-nav__link--cart {
+  position: relative;
+
+  &:hover .cart-modal {
+    display: block;
+  }
+}
+
+
+.cart-modal {
+  display: none;
+  background-color: $dark-100;
+  position: absolute;
+  min-height: 300px;
+  right: 0;
+  top: 100%;
+  width: 30vw;
+  padding: 30px;
+}
+
+.cart-modal__title {
+  color: $white;
 }
 
 

@@ -1,18 +1,17 @@
 
 .btn {
-  padding: 15px 20px;
+  min-width: 160px;
+  padding: 12px 9px;
+  font-size: 16px;
+  font-weight: 900;
+  color: $white;
+  border-radius: 6px;
+  background-color: $red-100;
 
   &:active, &:focus {
     outline: none;
   }
 
-  &--uppercase {
-    text-transform: uppercase;
-  }
-
-  &--lowercase {
-    text-transform: lowercase;
-  }
 }
 
 

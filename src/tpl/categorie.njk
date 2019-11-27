@@ -1,0 +1,60 @@
+
+{% extends 'common/_base-layout.njk' %}
+
+
+{% block content %}
+
+
+
+    <section class="main">
+
+        {% include "common/_aside.njk" %}
+
+
+        <div class="content-wrapper">
+            <main class="content-inner">
+
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ГЛАВНАЯ</a></li>
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ПИЦЦА</a></li>
+                </ul>
+
+                <h1 class="categorie__title">Доставка пиццы в СПб</h1>
+
+                <ul class="categorie-tabs">
+                    <li><button class="btn categorie-tabs__btn">На тонком тесте</button></li>
+                    <li><button class="btn categorie-tabs__btn">На традиционном тесте</button></li>
+                    <li><button class="btn categorie-tabs__btn">Мегапиццы</button></li>
+                </ul>
+
+                <ul class="product-list">
+
+                    {% for i in range(0, 8) %}
+
+                        <li class="product-item">
+                            <a class="product-item__link" href="">
+                                <img class="product-item__img" src="/src/assets/img/prod.jpg" alt="generic_img">
+                            </a>
+                            <div class="product-item--info-wrapper">
+                                <h3 class="product-item__title">Вок "Рис с говядиной"</h3>
+                                <p class="product-item__desc">Рассыпчатый рис, обжаренный со свежими овощами и ломтиками нежной говядины до золотистого цвета под фирменным соусом .</p>
+                                <div class="product-item--controls-wrapper">
+                                    <span class="product-item__price">
+                                        365
+                                        <svg class="" width="25" height="30" fill="#ffffff"><use xlink:href="#rubles"></use></svg>
+                                    </span>
+                                    <span class="product-item__weight">
+                                        <span>800</span>
+                                        <span>гр</span>
+                                    </span>
+                                    <button class="btn product-item__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </main>
+        </div>
+    </section>
+
+{% endblock %}

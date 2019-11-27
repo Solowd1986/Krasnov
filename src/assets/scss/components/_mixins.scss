@@ -3,7 +3,7 @@
 @mixin overlay($z-index-overlay) {
 
   &::before {
-    display: none;
+    display: block;
     content: "";
     position: fixed;
     width: 100%;

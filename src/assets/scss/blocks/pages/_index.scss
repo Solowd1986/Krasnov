@@ -19,7 +19,7 @@ body {
 
 .main {
   position: relative;
-  top: 124px;
+  top: 104px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -65,7 +65,7 @@ body {
   width: calc(100% / 12 * 4 - 30px);
   max-width: 500px;
   flex-direction: column;
-  margin: 100px 15px 0;
+  margin: 15px 15px;
   border-radius: 6px;
   background-color: $dark-100;
   transition: .3s;
@@ -145,6 +145,7 @@ body {
   font-size: 14px;
   font-weight: 900;
   color: $white;
+  text-align: center;
 
   background: url("/src/assets/img/aside-sprite.png") no-repeat;
   background-position: -275px -5px;
@@ -152,20 +153,12 @@ body {
 
 
 
-
 .product-item__btn {
 
-  min-width: 160px;
-  max-width: 300px;
-  padding: 12px 9px;
-  font-size: 16px;
-  font-weight: 900;
-  color: $white;
-  border-radius: 6px;
-  background-color: $red-100;
+  text-transform: uppercase;
 
   &:hover {
-    opacity: .7;
+    background-color: $red-200;
   }
 
 }

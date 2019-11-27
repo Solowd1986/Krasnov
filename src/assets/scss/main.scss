@@ -17,10 +17,12 @@
 @import "blocks/common/aside";
 @import "blocks/common/slider";
 @import "blocks/common/footer";
+@import "blocks/common/modals";
 
 
 /*  Отдельные страницы  */
 @import "blocks/pages/index";
+@import "blocks/pages/categorie";
 @import "blocks/pages/single-product";
 
 

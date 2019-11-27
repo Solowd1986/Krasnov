@@ -12,29 +12,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-
-.main-nav__logo {
+  padding: 20px 0;
 }
 
 .main-nav__logo-link {
-  max-width: 360px;
-  min-width: 300px;
-  align-self: stretch;
-  padding: 12px 20px;
+  min-width: 250px;
+  margin-left: 150px;
 }
-
-
-.logo {
-  max-width: 360px;
-  min-width: 300px;
-
-  background-image: url("/src/assets/img/logo4.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 
 
 
